@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multistage Sampling</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onLoad="mts()">
+  <header>
+    <ul>
+      <li><h1>Sampling Techniques</h1></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cen.html">Census</a></li>
+      <li><a href="srs.html">Simple Random Sample</a></li>
+      <li><a href="str.html">Stratified Sample</a></li>
+      <li><a href="clu.html">Cluster Sample</a></li>
+      <li><a href="mts.html">Multi-stage Sample</a></li>
+      <li><a href="sys.html">Systematic Sample</a></li>
+    </ul>
+  </header>
+  <div class="content">
+    <table>
+      <tr>
+        <td id="c1" class="circle clu0"></td>
+        <td id="c2" class="circle clu0"></td>
+        <td id="c3" class="circle clu0"></td>
+        <td id="c4" class="circle clu0"></td>
+        <td id="c5" class="circle clu0"></td>
+        <td id="c6" class="circle clu0"></td>
+        <td id="c7" class="circle clu0"></td>
+        <td id="c8" class="circle clu0"></td>
+        <td id="c9" class="circle clu0"></td>
+        <td id="c10" class="circle clu0"></td>
+        <td id="c11" class="circle clu0"></td>
+        <td id="c12" class="circle clu0"></td>
+        <td id="c13" class="circle clu0"></td>
+        <td id="c14" class="circle clu0"></td>
+        <td id="c15" class="circle clu0"></td>
+        <td id="c16" class="circle clu0"></td>
+        <td id="c17" class="circle clu0"></td>
+        <td id="c18" class="circle clu0"></td>
+        <td id="c19" class="circle clu0"></td>
+        <td id="c20" class="circle clu0"></td>
+      </tr>
+      <tr>
+        <td id="c21" class="circle clu0"></td>
+        <td id="c22" class="circle clu0"></td>
+        <td id="c23" class="circle clu0"></td>
+        <td id="c24" class="circle clu0"></td>
+        <td id="c25" class="circle clu0"></td>
+        <td id="c26" class="circle clu0"></td>
+        <td id="c27" class="circle clu0"></td>
+        <td id="c28" class="circle clu0"></td>
+        <td id="c29" class="circle clu0"></td>
+        <td id="c30" class="circle clu0"></td>
+        <td id="c31" class="circle clu0"></td>
+        <td id="c32" class="circle clu0"></td>
+        <td id="c33" class="circle clu0"></td>
+        <td id="c34" class="circle clu0"></td>
+        <td id="c35" class="circle clu0"></td>
+        <td id="c36" class="circle clu0"></td>
+        <td id="c37" class="circle clu0"></td>
+        <td id="c38" class="circle clu0"></td>
+        <td id="c39" class="circle clu0"></td>
+        <td id="c40" class="circle clu0"></td>
+      </tr>
+      <tr>          
+        <td id="c41" class="circle clu0"></td>
+        <td id="c42" class="circle clu0"></td>
+        <td id="c43" class="circle clu0"></td>
+        <td id="c44" class="circle clu0"></td>
+        <td id="c45" class="circle clu0"></td>
+        <td id="c46" class="circle clu0"></td>
+        <td id="c47" class="circle clu0"></td>
+        <td id="c48" class="circle clu0"></td>
+        <td id="c49" class="circle clu0"></td>
+        <td id="c50" class="circle clu0"></td>
+        <td id="c51" class="circle clu0"></td>
+        <td id="c52" class="circle clu0"></td>
+        <td id="c53" class="circle clu0"></td>
+        <td id="c54" class="circle clu0"></td>
+        <td id="c55" class="circle clu0"></td>
+        <td id="c56" class="circle clu0"></td>
+        <td id="c57" class="circle clu0"></td>
+        <td id="c58" class="circle clu0"></td>
+        <td id="c59" class="circle clu0"></td>
+        <td id="c60" class="circle clu0"></td>
+      </tr>
+      <tr>          
+        <td id="c61" class="circle clu1"></td>
+        <td id="c62" class="circle clu1"></td>
+        <td id="c63" class="circle clu1"></td>
+        <td id="c64" class="circle clu1"></td>
+        <td id="c65" class="circle clu1"></td>
+        <td id="c66" class="circle clu1"></td>
+        <td id="c67" class="circle clu1"></td>
+        <td id="c68" class="circle clu1"></td>
+        <td id="c69" class="circle clu1"></td>
+        <td id="c70" class="circle clu1"></td>
+        <td id="c71" class="circle clu1"></td>
+        <td id="c72" class="circle clu1"></td>
+        <td id="c73" class="circle clu1"></td>
+        <td id="c74" class="circle clu1"></td>
+        <td id="c75" class="circle clu1"></td>
+        <td id="c76" class="circle clu1"></td>
+        <td id="c77" class="circle clu1"></td>
+        <td id="c78" class="circle clu1"></td>
+        <td id="c79" class="circle clu1"></td>
+        <td id="c80" class="circle clu1"></td>
+      </tr>
+      <tr>          
+        <td id="c81" class="circle clu1"></td>
+        <td id="c82" class="circle clu1"></td>
+        <td id="c83" class="circle clu1"></td>
+        <td id="c84" class="circle clu1"></td>
+        <td id="c85" class="circle clu1"></td>
+        <td id="c86" class="circle clu1"></td>
+        <td id="c87" class="circle clu1"></td>
+        <td id="c88" class="circle clu1"></td>
+        <td id="c89" class="circle clu1"></td>
+        <td id="c90" class="circle clu1"></td>
+        <td id="c91" class="circle clu1"></td>
+        <td id="c92" class="circle clu1"></td>
+        <td id="c93" class="circle clu1"></td>
+        <td id="c94" class="circle clu1"></td>
+        <td id="c95" class="circle clu1"></td>
+        <td id="c96" class="circle clu1"></td>
+        <td id="c97" class="circle clu1"></td>
+        <td id="c98" class="circle clu1"></td>
+        <td id="c99" class="circle clu1"></td>
+        <td id="c100" class="circle clu1"></td>
+      </tr>
+      <tr>
+        <td id="c101" class="circle clu1"></td>
+        <td id="c102" class="circle clu1"></td>
+        <td id="c103" class="circle clu1"></td>
+        <td id="c104" class="circle clu1"></td>
+        <td id="c105" class="circle clu1"></td>
+        <td id="c106" class="circle clu1"></td>
+        <td id="c107" class="circle clu1"></td>
+        <td id="c108" class="circle clu1"></td>
+        <td id="c109" class="circle clu1"></td>
+        <td id="c110" class="circle clu1"></td>
+        <td id="c111" class="circle clu1"></td>
+        <td id="c112" class="circle clu1"></td>
+        <td id="c113" class="circle clu1"></td>
+        <td id="c114" class="circle clu1"></td>
+        <td id="c115" class="circle clu1"></td>
+        <td id="c116" class="circle clu1"></td>
+        <td id="c117" class="circle clu1"></td>
+        <td id="c118" class="circle clu1"></td>
+        <td id="c119" class="circle clu1"></td>
+        <td id="c120" class="circle clu1"></td>
+      </tr>
+      <tr>           
+        <td id="c121" class="circle clu2"></td>
+        <td id="c122" class="circle clu2"></td>
+        <td id="c123" class="circle clu2"></td>
+        <td id="c124" class="circle clu2"></td>
+        <td id="c125" class="circle clu2"></td>
+        <td id="c126" class="circle clu2"></td>
+        <td id="c127" class="circle clu2"></td>
+        <td id="c128" class="circle clu2"></td>
+        <td id="c129" class="circle clu2"></td>
+        <td id="c130" class="circle clu2"></td>
+        <td id="c131" class="circle clu2"></td>
+        <td id="c132" class="circle clu2"></td>
+        <td id="c133" class="circle clu2"></td>
+        <td id="c134" class="circle clu2"></td>
+        <td id="c135" class="circle clu2"></td>
+        <td id="c136" class="circle clu2"></td>
+        <td id="c137" class="circle clu2"></td>
+        <td id="c138" class="circle clu2"></td>
+        <td id="c139" class="circle clu2"></td>
+        <td id="c140" class="circle clu2"></td>
+      </tr>
+      <tr>           
+        <td id="c141" class="circle clu2"></td>
+        <td id="c142" class="circle clu2"></td>
+        <td id="c143" class="circle clu2"></td>
+        <td id="c144" class="circle clu2"></td>
+        <td id="c145" class="circle clu2"></td>
+        <td id="c146" class="circle clu2"></td>
+        <td id="c147" class="circle clu2"></td>
+        <td id="c148" class="circle clu2"></td>
+        <td id="c149" class="circle clu2"></td>
+        <td id="c150" class="circle clu2"></td>
+        <td id="c151" class="circle clu2"></td>
+        <td id="c152" class="circle clu2"></td>
+        <td id="c153" class="circle clu2"></td>
+        <td id="c154" class="circle clu2"></td>
+        <td id="c155" class="circle clu2"></td>
+        <td id="c156" class="circle clu2"></td>
+        <td id="c157" class="circle clu2"></td>
+        <td id="c158" class="circle clu2"></td>
+        <td id="c159" class="circle clu2"></td>
+        <td id="c160" class="circle clu2"></td>
+      </tr>
+      <tr>           
+        <td id="c161" class="circle clu2"></td>
+        <td id="c162" class="circle clu2"></td>
+        <td id="c163" class="circle clu2"></td>
+        <td id="c164" class="circle clu2"></td>
+        <td id="c165" class="circle clu2"></td>
+        <td id="c166" class="circle clu2"></td>
+        <td id="c167" class="circle clu2"></td>
+        <td id="c168" class="circle clu2"></td>
+        <td id="c169" class="circle clu2"></td>
+        <td id="c170" class="circle clu2"></td>
+        <td id="c171" class="circle clu2"></td>
+        <td id="c172" class="circle clu2"></td>
+        <td id="c173" class="circle clu2"></td>
+        <td id="c174" class="circle clu2"></td>
+        <td id="c175" class="circle clu2"></td>
+        <td id="c176" class="circle clu2"></td>
+        <td id="c177" class="circle clu2"></td>
+        <td id="c178" class="circle clu2"></td>
+        <td id="c179" class="circle clu2"></td>
+        <td id="c180" class="circle clu2"></td>
+      </tr>
+    </table>
+    <table id="legend">
+      <tr>
+        <td><div id="legendO"></div></td>
+        <td><p>Normal</p></td>
+        <td><div id="legendC"></div></td>
+        <td><p>Chosen</p></td>
+        <td><div id="footer"><p>© 2012 Luke Liu</p></div></td>
+      </tr>
+    </table>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
