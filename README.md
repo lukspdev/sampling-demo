@@ -13,4 +13,4 @@ They are:
 
 Enjoy :)
 
-###### HTML code created using ZenCoding for Vim
+###### HTML code created using [ZenCoding for Vim](http://www.vim.org/scripts/script.php?script_id=2981 "zencoding for vim")
